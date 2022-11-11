@@ -12,7 +12,7 @@ dirt.magFilter = NearestFilter
 grass.magFilter = NearestFilter
 glass.magFilter = NearestFilter
 wood.magFilter = NearestFilter
-log.magFilter = NearestFilter;
+log.magFilter = NearestFilter
 groundTexture.magFilter = NearestFilter;
 
 export {

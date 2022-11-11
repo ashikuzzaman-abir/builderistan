@@ -3,9 +3,10 @@ import {useThree, useFrame} from "@react-three/fiber"
 import {useSphere} from "@react-three/cannon";
 import { Vector3 } from 'three';
 import useKeyboard from '../hooks/useKeyboard';
+import gameConfig from '../configs/game.config';
 
-const JUMP_FORCE = 4;
-const SPEED= 4;
+const JUMP_FORCE = gameConfig.playerJump;
+const SPEED= gameConfig.playerSpeed;
 
 function Player() {
   const {camera} = useThree()
