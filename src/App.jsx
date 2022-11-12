@@ -8,8 +8,12 @@ import FPV from "./components/FPV";
 import Ground from "./components/Ground";
 import Player from "./components/Player";
 import Cubes from "./components/Cubes";
+import TextureSlector from "./components/TextureSlector";
+import useStore from "./hooks/useStore";
 function App() {
-	console.log();
+	const [texture] = useStore((state) => [state.texture])
+
+	// console.log("textur ", texture);
 	return (
 		<div className='App relative w-screen h-screen'>
 			<Canvas>
@@ -23,6 +27,7 @@ function App() {
 				</Physics>
 			</Canvas>
 			<div className="curser absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-gray-800  text-3xl select-none">+</div>
+			<TextureSlector />
 		</div>
 	);
 }

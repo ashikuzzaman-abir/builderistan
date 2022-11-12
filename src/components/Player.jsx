@@ -11,7 +11,7 @@ const SPEED= gameConfig.playerSpeed;
 function Player() {
   const {camera} = useThree()
   const [ref, api] = useSphere(() => ({
-    mass:1,
+    mass:10,
     type: 'Dynamic',
     position: [0,1,0]
   }))
