@@ -17,8 +17,8 @@ function App() {
 	// console.log("textur ", texture);
 	return (
 		<div>
-			<BuilderistanMain />
-			{/* <EarthMoon /> */}
+			{/* <BuilderistanMain /> */}
+			<EarthMoon />
 		</div>
 	);
 }
